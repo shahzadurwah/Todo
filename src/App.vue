@@ -1,8 +1,8 @@
 <template>
   <div class="container-fluid">
-    <div class="row justify-content-center p-3 set">
+    <div class="row justify-content-center p-3 set p-5"  style="background:white; border-radius: 10%;">
       <div class="col-8 text-center">
-        <h2>My Vue To Do App</h2>
+        <h2 class="mb-5">My Vue To Do App</h2>
       </div>
 
       <!-- input -->
@@ -17,8 +17,8 @@
           <tr>
             <th scope="col">Task</th>
             <th scope="col">Status</th>
-            <th scope="col" class="text-center">#</th>
-            <th scope="col" class="text-center">#</th>
+            <th scope="col" class="text-center">Edit</th>
+            <th scope="col" class="text-center">DEL</th>
           </tr>
         </thead>
         <tbody>
@@ -108,7 +108,10 @@ export default {
 };
 </script>
 
-<style scoped>
+<style>
+  body{
+    background-color: #e2e2e2;
+  }
 .set {
   max-width: 600px;
   margin: 2rem auto;
